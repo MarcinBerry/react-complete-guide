@@ -26,9 +26,9 @@ const AuthForm = () => {
         setIsLoading(true);
         let url;
         if (isLogin) {
-            url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[GOOGLE_KEY]";
+            url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key="+authCtx.GOOGLE_API_KEY;
         } else {
-            url = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[GOOGLE_KEY]";
+            url = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key="+authCtx.GOOGLE_API_KEY;
         }
         fetch(url, {
             method: 'POST',
