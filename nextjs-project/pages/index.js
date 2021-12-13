@@ -2,33 +2,14 @@ import React, { useEffect, useState } from "react";
 import MeetupList from "../components/meetups/MeetupList";
 import Layout from "../components/layout/Layout";
 import { MongoClient } from "mongodb";
-
-const DUMMY_MEETUPS = [
-  {
-    id: "m1",
-    tittle: "First meetup",
-    image: "http://www.studyinpoland.pl/en/images/news/studyinwarsaw.jpg",
-    address: "Some address 5, 12345 Some City",
-    description: "This is a first meetup!",
-  },
-  {
-    id: "m2",
-    tittle: "Second meetup",
-    image: "http://www.studyinpoland.pl/en/images/news/studyinwarsaw.jpg",
-    address: "Some address 5, 12345 Some City",
-    description: "This is a second meetup!",
-  },
-  {
-    id: "m3",
-    tittle: "Third meetup",
-    image: "http://www.studyinpoland.pl/en/images/news/studyinwarsaw.jpg",
-    address: "Some address 5, 12345 Some City",
-    description: "This is a third meetup!",
-  },
-];
+import Head from "next/head";
 const HomePage = (props) => {
   return (
     <>
+      <Head>
+        <title>React Meetups</title>
+        <meta name="description" content="Page with meetups from udemy tutorial."/>
+      </Head>
       <MeetupList meetups={props.meetups} />
     </>
   );
