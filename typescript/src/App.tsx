@@ -1,14 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import Todos from "./components/Todos";
-
+import Todo from "./models/todo";
+import NewTodo from "./components/NewTodo";
+import TodosContextProvider from "./store/TodosContext";
 function App() {
-    const items = ["MyList", "Learn React"]
   return (
-    <div>
-      <Todos items={items}/>
-    </div>
+    <TodosContextProvider>
+      <NewTodo />
+      <Todos />
+    </TodosContextProvider>
   );
 }
 
