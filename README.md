@@ -1,5 +1,5 @@
 <h2> react-complete-guide </h2>
-W trakcie: :green_square::green_square::green_square::green_square::green_square::green_square::green_square::black_medium_square::black_medium_square::black_medium_square:
+W trakcie: :green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square::black_medium_square::black_medium_square:
 <h3>Przykłady powstałe w trakcie nauki frameworka React.js, podczas kursów Maximilian'a Schwarzmüller'a.</h3>
 
 Podczas kursu zdobyłem wiedzę i umiejętności z zakresu:
