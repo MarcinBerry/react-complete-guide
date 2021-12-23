@@ -1,5 +1,3 @@
-import {Fragment} from 'react';
-
 import QuoteItem from './QuoteItem';
 import classes from './QuoteList.module.css';
 import {useHistory, useLocation} from "react-router-dom";
@@ -30,7 +28,7 @@ const QuoteList = (props) => {
         //history.push(`${location.pathname}?=sort${(isSortingAscending ? 'desc' : 'asc')}`);
     }
     return (
-        <Fragment>
+        <>
             <div className={classes.sorting}>
                 <button onClick={changeSortingHandler}>Sort {isSortingAscending ? 'Descending' : 'Ascending'}</button>
             </div>
@@ -44,7 +42,7 @@ const QuoteList = (props) => {
                     />
                 ))}
             </ul>
-        </Fragment>
+        </>
     );
 };
 
