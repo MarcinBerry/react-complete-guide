@@ -6,7 +6,7 @@ Podczas kursu zdobyłem wiedzę i umiejętności z zakresu:
 <ul>
   <li>Podstaw działania frameworka React.js</li>
   <li>Budowania komponentów react'a: funkcyjnych i klasowych</li>
-  <li>Tworzenia i kontrolowania przepyływu informacji pomiędzy komponentami</li>
+  <li>Tworzenia i kontrolowania przepływu informacji pomiędzy komponentami</li>
   <li>Korzystania z zaczepów Reakt'a (useState, useEffect, useReducer, useRef, useContext, useCallBack, useMemo)</li>
   <li>Tworzenia własnych zaczepów</li>
   <li>Korzystania z React Redux (wraz z biblioteką Redux Toolkit)</li>
